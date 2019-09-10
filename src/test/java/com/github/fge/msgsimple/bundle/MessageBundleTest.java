@@ -373,7 +373,7 @@ public final class MessageBundleTest
             "{0,number,integer}.";
         arguments = new Object[] { 7, calendar.getTime(),
             "a disturbance in the Force" };
-        expected = "At 12:30:00 PM on Jul 3, 2053, there was a disturbance in" +
+        expected = "At 12:30:00 on 2053 Jul 3, there was a disturbance in" +
             " the Force on planet 7.";
         list.add(new Object[] { format, arguments, expected });
 

@@ -43,12 +43,17 @@
 //    apply(plugin: "propdeps-eclipse");
 //}
 
+plugins {
+    id("net.ltgt.errorprone") version "0.8.1" apply false
+}
+
 apply(plugin: "java");
 apply(plugin: "maven");
 apply(plugin: "signing");
 apply(plugin: "osgi");
 apply(plugin: "idea");
 apply(plugin: "eclipse");
+apply(plugin: "net.ltgt.errorprone");
 
 apply(from: "project.gradle");
 
@@ -59,6 +64,14 @@ group = "com.github.java-json-tools";
  */
 repositories {
     mavenCentral();
+}
+
+/*
+ * Add errorprone checking.
+ */
+dependencies {
+    errorprone("com.google.errorprone:error_prone_core:2.3.3")
+    errorproneJavac("com.google.errorprone:javac:9+181-r4173-1")
 }
 
 /*

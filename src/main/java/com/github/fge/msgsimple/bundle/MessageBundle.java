@@ -201,6 +201,7 @@ public final class MessageBundle
      * @param params the format parameters
      * @return the formatted message
      */
+    @SuppressWarnings("JdkObsolete")
     public String format(final Locale locale, final String key,
         final Object... params)
     {

@@ -249,6 +249,7 @@ public final class LoadingMessageSourceProvider
         });
     }
 
+    @SuppressWarnings("FutureReturnValueIgnored")
     private void setupExpiry(final long duration, final TimeUnit unit)
     {
         final Runnable runnable = new Runnable()

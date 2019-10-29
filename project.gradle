@@ -22,8 +22,8 @@
  */
 group = "com.github.java-json-tools";
 version = "1.2-SNAPSHOT";
-sourceCompatibility = JavaVersion.VERSION_1_6;
-targetCompatibility = JavaVersion.VERSION_1_6; // defaults to sourceCompatibility
+sourceCompatibility = JavaVersion.VERSION_1_7;
+targetCompatibility = JavaVersion.VERSION_1_7; // defaults to sourceCompatibility
 
 /*
  * List of dependencies

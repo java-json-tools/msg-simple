@@ -40,7 +40,8 @@ dependencies {
     testCompile(group: "org.mockito", name: "mockito-core", version: "2.28.2");
 }
 
+// FIXME: For some reason, making this https causes OpenJDK 11 to fail.
 javadoc.options.links("http://docs.oracle.com/javase/6/docs/api/");
-javadoc.options.links("http://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.1/");
-javadoc.options.links("http://fge.github.io/btf/");
+javadoc.options.links("https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.1/");
+javadoc.options.links("https://java-json-tools.github.io/btf/");
 

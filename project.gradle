@@ -29,7 +29,7 @@ targetCompatibility = JavaVersion.VERSION_1_7; // defaults to sourceCompatibilit
  * List of dependencies
  */
 dependencies {
-    compile(group: "com.github.fge", name: "btf", version: "1.2");
+    compile(group: "com.github.java-json-tools", name: "btf", version: "1.3-SNAPSHOT");
     compile(group: "com.google.code.findbugs", name: "jsr305",
         version: "2.0.1");
     testCompile(group: "org.testng", name: "testng", version: "6.8.7") {

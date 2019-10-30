@@ -122,6 +122,7 @@ public final class MessageBundleBuilder
     /**
      * Convenience method to append a single-source provider for a given locale
      *
+     * @param locale the locale
      * @param source the message source
      * @return this
      * @see StaticMessageSourceProvider#withSingleSource(Locale, MessageSource)
@@ -138,6 +139,7 @@ public final class MessageBundleBuilder
     /**
      * Convenience method to prepend a single-source provider for a given locale
      *
+     * @param locale the locale
      * @param source the message source
      * @return this
      * @see StaticMessageSourceProvider#withSingleSource(Locale, MessageSource)

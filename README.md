@@ -30,7 +30,7 @@ See below for more.
 
 ## Versions
 
-The current version is **1.1**. Javadoc [here](http://fge.github.io/msg-simple/index.html).
+The current version is **1.2**. Javadoc [here](https://java-json-tools.github.io/msg-simple/index.html).
 
 See [here](https://github.com/fge/msg-simple/wiki/Examples) for sample API usage.
 
@@ -38,7 +38,7 @@ See [here](https://github.com/fge/msg-simple/wiki/Examples) for sample API usage
 
 Versions before 1.2 are available at `groupId` `com.github.fge`.
 
-You can download the jar directly on [Bintray](https://bintray.com/fge/maven/msg-simple).
+**OBSOLETE** You can download the jar directly on [Bintray](https://bintray.com/fge/maven/msg-simple).
 
 For Gradle:
 

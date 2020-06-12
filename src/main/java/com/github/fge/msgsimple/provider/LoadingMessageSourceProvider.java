@@ -40,6 +40,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * A caching, on-demand loading message source provider with configurable expiry
@@ -84,11 +85,14 @@ public final class LoadingMessageSourceProvider
     private static final ThreadFactory THREAD_FACTORY = new ThreadFactory()
     {
         private final ThreadFactory factory = Executors.defaultThreadFactory();
+        private final AtomicLong count = new AtomicLong(0);
 
         @Override
         public Thread newThread(final Runnable r)
         {
             final Thread ret = factory.newThread(r);
+            ret.setName(String.format(Locale.ROOT, "LoadingMessageSourceProvider-%d",
+                count.getAndIncrement()));
             ret.setDaemon(true);
             return ret;
         }
